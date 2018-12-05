@@ -1,11 +1,14 @@
-# include <stdio.h>
+#include <stdio.h>
+#include <assert.h>
 
 unsigned replace_byte (unsigned x, int i, unsigned char b);
 
 int main() {
     unsigned result = replace_byte(0x12345678, 2, 0xAB);
+    assert(result == 0x12AB5678);
     printf("for test case replace_byte(0x12345678, 2, 0xAB), expected result is 0x12AB5678, and the actural result is 0x%x\n", result);
     result = replace_byte(0x12345678, 0, 0xAB);
+    assert(result == 0x123456AB);
     printf("for test case replace_byte(0x12345678, 0, 0xAB), expected result is 0x123456AB, and the actural result is 0x%x\n", result);
     return 0;
 }
