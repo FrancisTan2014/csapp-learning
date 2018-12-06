@@ -13,7 +13,7 @@ Fill in the following table showing the values for the indicated operands:
 Operand | Value
 ---|---
 %rax | 0x100
-0x104 | 0xFF
+0x104 | 0xAB
 $0x108 | 0x108
 (%rax) | 0xFF
 4(%rax) | 0xAB
