@@ -1,4 +1,4 @@
-#Practice Problem 3.12 (solution page 329)
+# Practice Problem 3.12 (solution page 329)
 Consider the following function for computing the quotient and remainder of two unsigned 64-bit numbers:
 
 ```c
