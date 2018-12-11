@@ -1,6 +1,8 @@
+#define LESS_THAN <
+
 long absdiff(long x, long y) {
     long result;
-    if (x < y) {
+    if (x LESS_THAN y) {
         result = y - x;
     } else {
         result = x - y;
